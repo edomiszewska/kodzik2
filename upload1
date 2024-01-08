@@ -1,0 +1,17 @@
+<?php
+
+function sortuj($tablica){
+    for ($i=0;$i<count($tablica);$i++){
+        for ($j=0;$j<count($tablica)-1;$j++){
+            if($tablica[$j]>$tablica[$j+1]){
+                $pomoc=$tablica[$j];
+                $tablica[$j]=$tablica[$j+1];
+                $tablica[$j+1]=$pomoc;
+            }
+        }
+    }
+    return $tablica;
+}
+$tab=[5,4,2,7,4,8,2,5,1]
+print_r (sortuj($tab))
+?>
