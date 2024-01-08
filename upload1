@@ -12,6 +12,6 @@ function sortuj($tablica){
     }
     return $tablica;
 }
-$tab=[5,4,2,7,4,8,2,5,1]
+$tab=[5,4,2,7,4,8,2,5,1];
 print_r (sortuj($tab))
 ?>
